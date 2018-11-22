@@ -1,13 +1,9 @@
 const fs = require("fs");
 const Filter = require("bad-words");
 const Discord = require("discord.js");
-const express = require('express');
-const app = express();
 
 const filter = new Filter();
 const bot = new Discord.Client();
-
-app.use(express.static('public'));
 
 let config = JSON.parse(fs.readFileSync("config.json"));
 
@@ -53,5 +49,3 @@ bot.login(process.env.TOKEN)
    .catch (error => {
       console.log(error);
    });
-
-app.listen(process.env.PORT || 3000);
