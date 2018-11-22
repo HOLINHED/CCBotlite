@@ -45,7 +45,7 @@ bot.on('ready', () => {
    console.log("single, and ready to mingle!");
 });
 
-bot.login('secrettoken')
+bot.login(process.env.TOKEN)
    .catch (error => {
       console.log(error);
    });
