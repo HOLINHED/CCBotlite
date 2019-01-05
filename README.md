@@ -1,6 +1,6 @@
 # Coding Club Discord bot
 
-    on DM
+   on DM
       non-command:
         response: User's filtered message to configured channel.
       command:
@@ -11,6 +11,6 @@
           
           
 TODO:
-    1) add !admins command with 'list' and 'add' params
+        1) add !admins command with 'list' and 'add' params
             
       
