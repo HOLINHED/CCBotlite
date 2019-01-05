@@ -1,8 +1,16 @@
-# setup
+# Coding Club Discord bot
 
-make sure to have node and npm installed.
-in terminal, run 'npm install'
-
-# run
-on line 48 of index.js, change process.env.TOKEN to your discord token.
-run 'npm start' or 'node index.js'
+    on DM
+      non-command:
+        response: User's filtered message to configured channel.
+      command:
+        !channel: 
+          params:
+            channelID: (int) The id of the desired channel.
+          response: Displays the new channel ID.
+          
+          
+TODO:
+    1) add !admins command with 'list' and 'add' params
+            
+      
